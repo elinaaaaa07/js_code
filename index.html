@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = javascript.js></script>
+</head>
+<body>
+    <script>
+//№ 1
+/*var an = "Я JavaScript!"
+document.write(an);*/
+
+//№ 2
+/*var admin = "Иван"
+var name = "Иван"
+alert(admin);*/
+
+//№ 3
+/*let name = "Ilya";
+alert( `hello ${1}` ); // ?
+alert( `hello ${"name"}` ); // ?
+alert( `hello ${name}` ); // ?*/
+
+//№ 4
+/*var name = prompt ("как вас зовут?")
+document.write("Ваше имя "+ name);*/
+
+//№ 5
+/*let a = 1, b = 1;
+let c = ++a; // ?
+let d = b++; // ?
+document.write(a)*/
+
+//№ 6
+/*let a = 2;
+let x = 1 + (a *= 2);
+document.write(a,x)*/
+
+
+//№ 7
+/*let a = ("Первое число?", 1);
+let b = ("Второе число?", 2);
+alert(a + b);*/
+
+
+//№ 9
+/*if ("0") {
+  alert( 'Привет' );
+}*/
+
+//№ 10
+/*let num = prompt("Какое официальное название JavaScript?", ' ');
+if (num == "ECMAScript") {
+alert("Верно!")
+}
+else{
+    alert ("Не знаете? ECMAScript");
+}*/
+
+//№ 11
+/*let result;
+if (a + b < 4) {
+  result = 'Мало';
+} else {
+  result = 'Много';
+}
+
+//№ 14
+/*alert( null || 4 || undefined );*/
+
+//№ 15
+/*alert( alert(1) || 2 || alert(3) );*/
+
+//№ 16
+/*alert( 1 && null && 2 );*/
+
+//№ 17
+/*alert( alert(1) && alert(2) );*/
+
+//№ 18
+/*alert( null || 2 && 3 || 4 );*/
+
+//№ 19
+/*let value = NaN;
+
+value &&= 10;
+value ||= 20;
+value &&= 30;
+value ||= 40;
+
+alert(value);*/
+
+//№ 20
+/*function CheckAge (age) {
+    if (age >=14 && age <= 90) {
+        return true ;
+    }
+    return false;
+}
+let age =prompt ("возраст")*/
+
+//№ 23
+let Name = prompt("Кто там?", '');
+
+if (Name === 'Админ') {
+
+let pass = prompt('Пароль?', '');
+
+if (pass === 'Я главный') {
+alert( 'Здравствуйте!' );
+} else if (pass === '' || pass === null) {
+alert( 'Отменено' );
+} else {
+alert( 'Неверный пароль' );
+}
+
+} else if (Name === '' || Name === null) {
+alert( 'Отменено' );
+} else {
+alert( "Я вас не знаю" );
+}
+
+    </script>
+</body>
+</html>
